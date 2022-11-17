@@ -1,13 +1,14 @@
 <template>
-  <nav>
+  <div class="wrapper">
     <button @click="toHome" class="logo-btn">
       <img src="../../images/horizontal-logo.png" alt="logo" height="80"/>
     </button>
-    
-    <RouterLink to="/wholesale">Wholesale</RouterLink>
-    <RouterLink to="/food-trucks">Food Trucks</RouterLink>
-    <RouterLink to="/about">About</RouterLink>
-  </nav>
+    <nav>
+      <router-link to="/wholesale">Wholesale</router-link>
+      <router-link to="/food-trucks">Food Trucks</router-link>
+      <router-link to="/about">About</router-link>
+    </nav>
+</div>
 </template>
 
 <script>
@@ -30,6 +31,18 @@ nav {
   background-color: white;
   padding: 10px 30px 10px 30px;
   z-index: 1;
+  width: 50%RouterView;
+}
+
+a, a:visited, a:active {
+  text-decoration: none;
+  color: inherit;
+}
+
+a:hover {
+  color: rgb(52, 185, 185);
+  cursor: pointer;
+  text-decoration:none; 
 }
 
 .logo-btn {
@@ -37,5 +50,9 @@ nav {
   border: none;
   cursor: pointer;
   padding: 0;
+}
+
+.wrapper {
+  text-align: center;
 }
 </style>

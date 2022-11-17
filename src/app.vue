@@ -15,25 +15,21 @@ import TopBar from "@/components/topbar.vue";
    <RouterView />
   </main>
 
-   <footer>
+  <footer>
     <footer-section />
   </footer>
 </template>
 
 <style scoped>
 
-/* main {
-  background: #f1f1f1;
-} */
-
-footer {
-  position: fixed;
-  left: 0;
-  bottom: 0;
-  width: 100%;
+main {
+  padding: 0 2rem 0 2rem;
 }
 
-#app {
-  font-family: 'Avenir Next', -apple-system, Segoe UI, sans-serif;
+footer {
+  padding: 0 2rem 0 2rem;
+  position: absolute;
+  bottom: 0;
+  width: 100%;
 }
 </style>
